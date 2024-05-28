@@ -1,0 +1,166 @@
+@font-face {
+    font-family: "Futura PT";
+    src: url("../fonts/FuturaPT-Light.woff2");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Futura PT";
+    src: url("../fonts/FuturaPT-Book.woff2");
+    font-weight: 350;
+}
+
+@font-face {
+    font-family: "Futura PT";
+    src: url("../fonts/FuturaPT-Medium.woff2");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Futura PT";
+    src: url("../fonts/FuturaPT-Demi.woff2");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Segoe UI";
+    src: url("../fonts/SegoeUI-Light.woff2");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Forum";
+    src: url("../fonts/Forum-Regular.woff2");
+}
+
+:root {
+    --font-family: "Futura PT", sans-serif;
+    --second-family: "Segoe UI", sans-serif;
+    --third-family: "Forum", sans-serif;
+
+    --main-color: #272727;
+
+}
+
+body {
+    font-family: var(--font-family);
+    
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.container {
+    padding-inline: 162px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    background: linear-gradient(to right, #fff 0%, #fff calc(100% - 562px), 
+    var(--main-color) calc(100% - 562px), var(--main-color) 100%);
+    height: 1024px;
+    /* height: 100vh; */
+}
+
+.header__logo {
+    margin-top: 70px;
+}
+
+
+
+.nav {
+    width: 210px;
+    margin-top: 77px;
+}
+
+
+
+.nav__shopping-cart {
+    padding-left: 10px;
+    color: #fff;
+}
+
+.menu, .languages__ru, .languages__en {
+    border: none;
+    background: transparent;
+}
+
+.intro {
+    position: relative;
+    margin-block: 281px 281px;
+}
+
+.intro__header {
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 64px;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+}
+
+.intro_to-collection {
+    font-family: var(--second-family);
+    font-style: italic;
+    margin-left: 255px;
+    position: relative;
+}
+
+.intro_to-collection::before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    right: 180px; 
+    width: 130px;
+    height: 1px;
+    background-color: var(--main-color);
+}
+
+.intro__image {
+    position: absolute;
+    top: -20px;
+    right: 50%;
+    left: 50%;
+}
+
+.languages {
+    display: flex;
+    align-items: end;
+}
+
+.languages__en_disabled {
+    color: #c4c4c4;
+}
+
+.item-description {
+    text-align: right;
+}
+
+.item-description__title {
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    
+    color: #fff;
+}
+
+.item-description__consist {
+    font-weight: 300;
+    font-size: 18px;    
+    color: #c2c2c2;
+}
+
+.item-description__price {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 0.03em;
+    color: #efc58b;
+}
