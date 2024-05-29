@@ -62,20 +62,191 @@
         </div>
       </div>
     </header>
-    <!-- <main>
+    <main>
       <div class="flex-container">
-        <div class="for-men">
-          <img src="./assets/for-men.png" alt="men collection" />
-          <a href="" class="to-collection for-men"></a>
-          <p>Для мужчин</p>
+        <div class="collection for-men">
+          <p>Перейти в раздел</p>
+          <a href="#" class="to-collection">Для мужчин</a>
         </div>
-        <div class="for-women">
-          <img src="./assets/for-women.png" alt="women collection" />
-          <a href="" class="to-collection for-women"></a>
-          <p>Для мужчин</p>
+        <div class="collection for-women">
+          <p>Перейти в раздел</p>
+          <a href="#" class="to-collection">Для женщин</a>
         </div>
       </div>
-    </main> -->
-    <footer></footer>
+
+      <section class="shop-location">
+        <div class="flex-container">
+          <div class="container">
+            <div class="find-shop">
+              <h2 class="section-header">
+                Найди <br />
+                бутик около себя
+              </h2>
+              <p>
+                Введите свой адрес и узнайте о самых ближайших бутиках к вам
+              </p>
+              <form class="email-form">
+                <input type="text" placeholder="Введите адрес" />
+                <button type="submit">
+                  <img src="./assets/input-arrow.svg" alt="" />
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="shops-map"></div>
+        </div>
+      </section>
+
+      <section class="catalog-items">
+        <div class="catalog-item">
+          <img src="./assets/ring1-catalog.svg" alt="ring" />
+          <div class="catalog-description">
+            <p class="item-description__title catalog-item-title">
+              КОЛЬЦО jow’s, Cartier
+            </p>
+            <p class="item-description__consist">Белое золото, бриллианты</p>
+            <p class="item-description__price">674 000 ₽</p>
+          </div>
+        </div>
+        <div class="catalog-item">
+          <img src="./assets/ring2-catalog.svg" alt="ring" />
+          <div class="catalog-description">
+            <p class="item-description__title catalog-item-title">
+              КОЛЬЦО jow’s, Cartier
+            </p>
+            <p class="item-description__consist">Белое золото, бриллианты</p>
+            <p class="item-description__price">674 000 ₽</p>
+          </div>
+        </div>
+        <!-- catalog item placed in center-->
+        <div class="catalog-item catalog-item-center">
+          <!-- <img src="./assets/necklace-catalog.png" alt="ring" /> -->
+          <div class="catalog-description">
+            <p class="item-description__title catalog-item-title">
+              КОЛЬЦО jow’s, Cartier
+            </p>
+            <p class="item-description__consist">Белое золото, бриллианты</p>
+            <p class="item-description__price">674 000 ₽</p>
+          </div>
+        </div>
+        <div class="catalog-item">
+          <img src="./assets/earrings4-catalog.svg" alt="ring" />
+          <div class="catalog-description">
+            <p class="item-description__title catalog-item-title">
+              КОЛЬЦО jow’s, Cartier
+            </p>
+            <p class="item-description__consist">Белое золото, бриллианты</p>
+            <p class="item-description__price">674 000 ₽</p>
+          </div>
+        </div>
+        <div class="catalog-item">
+          <img src="./assets/earrings5-catalog.svg" alt="ring" />
+          <div class="catalog-description">
+            <p class="item-description__title catalog-item-title">
+              КОЛЬЦО jow’s, Cartier
+            </p>
+            <p class="item-description__consist">Белое золото, бриллианты</p>
+            <p class="item-description__price">674 000 ₽</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="follow-us">
+        <div class="container">
+          <h2 class="section-header">Мы <br />в социальных сетях</h2>
+        </div>
+        <div class="slider">
+          <img src="./assets/social-media1.png" alt="" />
+          <img src="./assets/social-media2.png" alt="" />
+          <img src="./assets/social-media3.png" alt="" />
+          <img src="./assets/social-media4.png" alt="" />
+          <img src="./assets/social-media5.png" alt="" />
+        </div>
+        <div class="container">
+          <div class="flex-container">
+            <div class="social-links">
+              <img src="./assets/icons/Facebook.svg" alt="" />
+              <img src="./assets/icons/Instagram.svg" alt="" />
+            </div>
+            <div class="slider-control">
+              <img
+                style="transform: rotate(180deg)"
+                src="./assets/input-arrow.svg"
+                alt=""
+              />
+
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle circle-active"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <div class="circle"></div>
+              <img src="./assets/input-arrow.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="news-subscription">
+        <div class="flex-container">
+          <img src="./assets/news-subscription-photo.png" alt="" />
+          <div class="follow-news">
+            <div class="main-shop-phone">
+              <p>телефон флагманского магазина</p>
+              <a href="tel: +7800456456">+7 800 456 456</a>
+            </div>
+            <form class="email-form">
+              <label for="email-input">Подпишитесь на новости</label>
+              <input
+                id="email-input"
+                type="text"
+                placeholder="Введите E-mail"
+              />
+              <button type="submit">
+                <svg
+                  width="30"
+                  height="17"
+                  viewBox="0 0 30 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21.125 1L29 8.5M29 8.5L21.125 16M29 8.5H1"
+                    stroke="#272727"
+                    stroke-width="1.8"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- <footer>
+      <div class="container">
+        <div class="flex-container">
+          <nav>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </nav>
+        </div>
+        <div class="flex-container">
+          <span class="header__logo">
+            <img src="./assets/icons/logo.svg" alt="logo" />
+          </span>
+          <div class="hotline"></div>
+          <div class="">
+            <form class="email-form">
+              <label for="">Подпишитесь на новости</label>
+              <input id="email-input" type="text" placeholder="Введите адрес" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer> -->
   </body>
 </html>
